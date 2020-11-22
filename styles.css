@@ -1,21 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body{
     margin: 0;
     height: 100vh;
     background-image: url("images/bg-desktop.svg");
     background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'poppins';
+}
+
+button{
+    background: white;
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    color: hsl(257, 40%, 49%);
+    font-size: 16px;
+    border: none;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
     color: white;
 }
 
+h1{
+    margin: 0;
+}
 
 .mainContainer{
     padding: 4em;
-    
 }
 
 .logoContainer{
     height: 20%;
 }
 
+#logo{
+    width: 200px;
+}
 
 .middleContainer{
     display: flex;
@@ -24,6 +48,10 @@ body{
 
 .mockups{
     width: 50vw;
+}
+
+.content{
+    padding: 40px;
 }
 
 .socialMediaContainer{
@@ -51,4 +79,52 @@ body{
 }
 
 
+@media only screen and (max-width:700px){
+    button{
+        width: 50vw;
+    }
 
+    h1{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .mainContainer{
+        padding: 2em;  
+    }
+
+    .middleContainer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mockups{
+        width: 80vw;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 60px 0px 40px 0px;
+    }
+
+    .socialMediaContainer{
+        justify-content: center;
+    }
+
+    .logoContainer{
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    body{
+        background-image: url("images/bg-mobile.svg");
+        background-size: auto;
+    }
+}
