@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url("images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+}
+
+
+.mainContainer{
+    padding: 4em;
+    
+}
+
+.logoContainer{
+    height: 20%;
+}
+
+
+.middleContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.mockups{
+    width: 50vw;
+}
+
+.socialMediaContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.social{
+    margin: 10px;
+    
+}
+
+.social:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
